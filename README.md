@@ -1,2 +1,8 @@
-# battlestation
-Salt configuration for my Ubuntu environment
+# BattleStation
+
+BattleStation is a salt configuration for my Ubuntu workstation.
+
+## Running a State
+
+1. Navigate to the location of the checkout out git repo
+2. Type in the following command `sudo salt-call state.apply --local --retcode-passthrough --file-root=$(pwd)/state <state>`
