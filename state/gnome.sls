@@ -17,3 +17,9 @@ gnome_theme_apply:
     - name: dconf write /org/gnome/desktop/interface/gtk-theme "'Adapta-Eta'"
     - require:
       - pkg: gnome_theme_install
+
+gnome_terminal_tabs:
+  cmd.run:
+    - name: |
+        gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab '<Primary>Tab'
+        gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab '<Primary><Shift>Tab'

@@ -9,6 +9,9 @@ BattleStation is a salt configuration for my Ubuntu workstation.
 
 ## States
 
+### gnome
+
+* Made it possible to Shift+Tab and Ctrl+Shift+Tab between terminal tabs
 ### zsh
 
 * Installed zsh
