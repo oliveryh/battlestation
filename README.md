@@ -12,6 +12,11 @@ BattleStation is a salt configuration for my Ubuntu workstation.
 ### gnome
 
 * Made it possible to Shift+Tab and Ctrl+Shift+Tab between terminal tabs
+
+### nautilus
+
+* Typeahead enabled during search (disabled in later versions of linux)
+
 ### zsh
 
 * Installed zsh
