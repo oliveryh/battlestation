@@ -22,3 +22,5 @@ BattleStation is a salt configuration for my Ubuntu workstation.
 * Installed zsh
 * Added oh-my-zsh
 * Allowed custom zsh config to be added from git
+* Added peco history
+* Default to agnoster theme (installed needed fonts)
