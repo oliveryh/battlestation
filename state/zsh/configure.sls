@@ -26,3 +26,12 @@ zsh_peco_config:
     - contents: |
         source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh
     - name: ~{{ user }}/.oh-my-zsh/custom/peco.zsh
+
+zsh_syntax-highlighting_install:
+  git.cloned:
+    - name: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    - target: {{ salt["user.info"](user).home }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+zsh_syntax-highlighting_enable:
+  cmd.run:
+    - name: sed -i 's/plugins=(/&zsh-syntax-highlighting /' ~{{ user }}/.zshrc
