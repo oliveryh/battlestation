@@ -5,7 +5,7 @@ BattleStation is a salt configuration for my Ubuntu workstation.
 ## Running a State
 
 1. Navigate to the location of the checkout out git repo
-2. Type in the following command `sudo salt-call state.apply --local --retcode-passthrough --file-root=$(pwd)/state <state>`
+2. Type in the following command `sudo salt-call state.apply --local --retcode-passthrough --file-root=$(pwd)/state --pillar-root=$(pwd)/pillar <state>`
 
 ## States
 
