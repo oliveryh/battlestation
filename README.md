@@ -25,3 +25,24 @@ BattleStation is a salt configuration for my Ubuntu workstation.
 * Added peco history
 * Default to agnoster theme (installed needed fonts)
 * Added pluging: zsh-syntax-highlighting
+
+### tmux
+
+Inspired from: [This post](https://zserge.com/posts/tmux/)
+
+* Mod+1..9: switch windows from 1 to 9
+* Mod+, and Mod+.: switch to next/prev windows
+* Mod+HJKL or arrows: switch between panes
+* Mod+N: create new window
+* Mod+F: toggle full-screen
+* Mod+V: split vertically
+* Mod+B: split horizontally (“bisect”)
+* Mod+X: close pane
+* Mod+/: enter copy and scroll mode
+* Mod+< and Mod+>: move current window to the left/right
+* Mod+Shift+HJKL or arrows: move pane to the left/right/up/down
+* Mod+Shift+X: close window
+* Mod+Shift+R: rename window
+
+TODO: Install tree
+TODO: Install espanso
