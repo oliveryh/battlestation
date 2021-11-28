@@ -5,8 +5,11 @@ zsh_oh-my-zsh_custom:
     - name: ~{{ user }}/.oh-my-zsh/custom/setup.zsh
 
 zsh_oh-my-zsh_agnoster-font:
-  pkg.installed:
-    - name: fonts-powerline
+  git.latest:
+    - name: https://github.com/powerline/fonts.git
+    - target: /tmp/fonts/
+  cmd.run:
+    - name: bash /tmp/fonts/install.sh
 
 zsh_dir:
   file.directory:
@@ -34,4 +37,4 @@ zsh_syntax-highlighting_install:
 
 zsh_syntax-highlighting_enable:
   cmd.run:
-    - name: sed -i 's/plugins=(/&zsh-syntax-highlighting /' ~{{ user }}/.zshrc
+    - name: sed -i ' ' 's/plugins=(/&zsh-syntax-highlighting /' ~{{ user }}/.zshrc
