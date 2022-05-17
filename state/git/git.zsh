@@ -1,4 +1,5 @@
 alias gfu="git commit --fixup"
+alias grbas="git rebase -i --autosquash origin/main"
 
 function watch_run() {
   if [ $# -eq 0 ]; then                                                                                                                                                                                                                     
