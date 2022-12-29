@@ -1,1 +1,1 @@
-sudo salt-call --local state.apply $1 --log-level debug -c $(pwd) --file-root=$(pwd)/state
+sudo salt-call state.apply --local --retcode-passthrough --file-root=$(pwd)/state --pillar-root=$(pwd)/pillar $1
