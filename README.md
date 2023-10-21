@@ -2,6 +2,10 @@
 
 BattleStation is a salt configuration for my Ubuntu workstation.
 
+## Installation
+
+One option for installation, is to install `salt` using a python package manager and then activating that virtual environment before running the commands below.
+
 ## Running a State
 
 1. Navigate to the location of the checkout out git repo
