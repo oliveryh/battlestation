@@ -18,4 +18,4 @@ git.delta.config.filter:
 git.alias:
   file.managed:
     - source: salt://{{ tpldir }}/git.zsh
-    - name: ~{{ user }}/.oh-my-zsh/custom/git.zsh
+    - name: {{ salt["user.info"](user).home }}/.oh-my-zsh/custom/git.zsh
