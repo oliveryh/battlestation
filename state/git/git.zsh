@@ -1,5 +1,6 @@
 alias gfu="git commit --fixup"
 alias grbas="git rebase -i --autosquash origin/main"
+alias gpf="git push origin $(git_current_branch) --force-with-lease"
 
 function watch_run() {
   if [ $# -eq 0 ]; then                                                                                                                                                                                                                     
